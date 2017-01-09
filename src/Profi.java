@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -22,11 +23,11 @@ public class Profi {
         catch (IOException ioe) {
             System.out.println("File have troubles in reading");
         }
-
-
+        ioMaster.printBody();
         ioMaster.timer.printTodayStat();
         ioMaster.timer.printCommonStat();
         ioMaster.timer.pringProgressLine();
+
     }
 
 }

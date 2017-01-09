@@ -1,7 +1,9 @@
+import java.util.Date;
 /**
  * Created by Boronin on 1/9/2017.
  */
 public class Timer {
+    public Date startDate = new Date(1482872400000l);
     public Float totalHours;
     public Float todayHours;
     public Float completeHours;
@@ -35,6 +37,7 @@ public class Timer {
         float fYears = 0;
         float partOfyear = 0;
         int month = 0;
+        int deltaDays = 0;
         System.out.println("--------------------------------------------------");
         for (int i = 2; i < 8; i++) {
             fYears = (delta / i) / 365;
@@ -45,12 +48,14 @@ public class Timer {
             System.out.print(iYears + " years ");
             System.out.println(month + " months)");
         }
+        deltaDays = (int)(new Date().getTime()- startDate.getTime())/1000/60/60/24;
+        System.out.println("\nThe average value of your proctivity: " + Math.round(totalHours / deltaDays * 100) / 100.0 + " hours per day");
     }
 
     void pringProgressLine() {
         float yourProgress = totalHours * 100 / 10000;
         System.out.println("");
-        System.out.println("You are professional on " + yourProgress + "%");
+        System.out.println("You are professional on " + Math.round(yourProgress*100)/100.0 + "%");
         for (int i = 0; i < 100; i+=2) {
             if (i < yourProgress) {
                 System.out.print("|");
