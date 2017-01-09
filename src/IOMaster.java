@@ -12,6 +12,15 @@ public class IOMaster {
     public static FileReader fr;
     public static FileWriter fw;
     public static Scanner scanner;
+    public static BufferedReader consoleInput;
+
+    public IOMaster() throws IOException {
+        timer = new Timer();
+        file = new File("src/data.txt");     // bind file and object of File
+        fr = new FileReader(file);
+        scanner = new Scanner(fr);
+        consoleInput = new BufferedReader(new InputStreamReader(System.in));
+    }
 
     public void printHeader() {
         System.out.println("Area: Android development");
@@ -26,10 +35,13 @@ public class IOMaster {
         System.out.println("Enter a numbers of hours:");
     }
 
+    public void printBody() {
+        System.out.println("You worked " + timer.totalHours + " hours");
+        System.out.println("In order to become a Pro left " + (10000 - timer.totalHours) + " hours");
+    }
+
     public void todayReader() throws IOException {
-        fr = new FileReader(file);
-        scanner = new Scanner(fr);
-        BufferedReader consoleInput = new BufferedReader(new InputStreamReader(System.in));
+
         // Reading today data
         timer.todayHours = new Float(0.0);
         try {
