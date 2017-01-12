@@ -9,25 +9,24 @@ public class Profi {
     public static void main(String[] args) throws IOException {
 
         IOMaster ioMaster = new IOMaster();
-        ioMaster.printHeader();
+
         try {
+            ioMaster.printHeader();
             ioMaster.oldReader();
-            if (ioMaster.file.exists()) {
-                ioMaster.todayReader();
-                ioMaster.totalWriter();
-            }
-            else {
-                System.out.println("File not found");
-            }
+            ioMaster.todayReader();
+            ioMaster.totalWriter();
+            ioMaster.printBody();
         }
         catch (IOException ioe) {
-            System.out.println("File have troubles in reading");
+            System.out.println("Troubles closing the streams");
         }
-        ioMaster.printBody();
+
         ioMaster.timer.printTodayStat();
         ioMaster.timer.printCommonStat();
         ioMaster.timer.pringProgressLine();
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String endOfprogramm = br.readLine();
     }
 
 }

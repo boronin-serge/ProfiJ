@@ -1,0 +1,38 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>console</headerType>
+  <jar>C:\Users\Boronin\Documents\MyProjects\ProfiJ\ProfiJ.jar</jar>
+  <outfile>C:\Users\Boronin\Documents\MyProjects\ProfiJ\Executable files\ProfiJ.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>false</customProcName>
+  <stayAlive>true</stayAlive>
+  <manifest></manifest>
+  <icon>C:\Users\Boronin\Documents\MyProjects\ProfiJ\favicon2_1_400x400.ico</icon>
+  <singleInstance>
+    <mutexName>ProfiJ</mutexName>
+    <windowTitle>ProfiJ - 10 000 hours for your skills</windowTitle>
+  </singleInstance>
+  <jre>
+    <path>C:\Java\jdk1.8.0_102\jre</path>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>jdkOnly</jdkPreference>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0.0</txtFileVersion>
+    <fileDescription>-</fileDescription>
+    <copyright>BSV</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0.0.0</txtProductVersion>
+    <productName>ProfiJ</productName>
+    <companyName></companyName>
+    <internalName>-</internalName>
+    <originalFilename>ProfiJ.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>
