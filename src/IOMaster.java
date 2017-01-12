@@ -16,7 +16,7 @@ public class IOMaster {
 
     public IOMaster() throws IOException {
         timer = new Timer();
-        file = new File("src/data.txt");     // bind file and object of File
+        file = new File("data.txt");     // bind file and object of File
         fr = new FileReader(file);
         scanner = new Scanner(fr);
         consoleInput = new BufferedReader(new InputStreamReader(System.in));
@@ -29,6 +29,7 @@ public class IOMaster {
         System.out.println("- Data base");
         System.out.println("- Git");
         System.out.println("- Soft skills");
+        System.out.println("- English language");
         System.out.println("");
         System.out.println("Hey, bro! How much time you spent today that be the Professional?");
         System.out.println("");
