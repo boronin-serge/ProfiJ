@@ -48,7 +48,7 @@ public class Timer {
             System.out.print(iYears + " years ");
             System.out.println(month + " months)");
         }
-        deltaDays = (int)(new Date().getTime()- startDate.getTime())/1000/60/60/24;
+        deltaDays = -(int)(new Date().getTime()- startDate.getTime())/1000/60/60/24;
         System.out.println("\nThe average value of your proctivity: " + Math.round(totalHours / deltaDays * 100) / 100.0 + " hours per day");
     }
 
