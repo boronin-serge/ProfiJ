@@ -37,7 +37,7 @@ public class IOMaster {
     }
 
     public void printBody() throws IOException{
-        System.out.println("You worked " + timer.totalHours + " hours");
+        System.out.println("You worked " + Math.round(timer.totalHours * 100) / 100.0 + " hours");
         System.out.println("In order to become a Pro left " + (10000 - timer.totalHours) + " hours");
     }
 
