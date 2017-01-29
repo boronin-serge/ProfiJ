@@ -37,7 +37,7 @@ public class Timer {
         float fYears = 0;
         float partOfyear = 0;
         int month = 0;
-        int deltaDays = 0;
+        long deltaDays = 0;
         System.out.println("--------------------------------------------------");
         for (int i = 2; i < 8; i++) {
             fYears = (delta / i) / 365;
@@ -48,7 +48,7 @@ public class Timer {
             System.out.print(iYears + " years ");
             System.out.println(month + " months)");
         }
-        deltaDays = -(int)(new Date().getTime()- startDate.getTime())/1000/60/60/24;
+        deltaDays =(new Date().getTime()- startDate.getTime())/1000/60/60/24;
         System.out.println("\nThe average value of your proctivity: " + Math.round(totalHours / deltaDays * 100) / 100.0 + " hours per day");
     }
 

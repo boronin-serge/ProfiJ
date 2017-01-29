@@ -24,9 +24,9 @@ public class IOMaster {
     }
 
     public void printHeader() {
-        System.out.println("Area: Android development");
-        System.out.println("- Java");
-        System.out.println("- Android SDK");
+        System.out.println("Area: Mobile development");
+        System.out.println("- Java, C++, Qt");
+        System.out.println("- Android SDK, NDK");
         System.out.println("- Data base");
         System.out.println("- Git");
         System.out.println("- Soft skills");
