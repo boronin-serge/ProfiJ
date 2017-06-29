@@ -2,4 +2,5 @@
 
 git add .
 git commit --amend
+git pull far master
 git push far master
